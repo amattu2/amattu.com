@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Animations */
+.animate-h { visibility: hidden; }
+
+/* Base Stuff */
+h1,h2,h3,h4,h5,p,li,div,btn,a,label,i,button,form,textarea { font-family: 'Open Sans', sans-serif; }
+h1,h2,h3,h4 { font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+a { text-decoration: none; color: inherit; }
+a:hover { color: #222; }
+
+.theme-1 {
+	background-color: #222;
+	color: #fff;
+}
+
+.theme-2 {
+	background-color: #fff;
+	color: #222;
+}
+
+.theme-3 {
+	background-color: #ff6c2c;
+	color: #fff;
+}
+
+.theme-4 {
+	background-color: #e2e1e0;
+	color: #222;
+}
+
+.text-thin, .text-thin > * {
+	font-weight: 300 !important;
+}
+
+.case {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08),0 3px 6px rgba(0, 0, 0, 0.12);
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.sep {
+	width: 100%;
+	height: 1px;
+	background: #eee;
+}
+	
+hr {
+	border-top: 1px solid #8c8b8b;
+}
+
+/* Content */
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.row {
+	display: inline-block;
+	width: 100%;
+}
+
+.row-left {
+	left: 0;
+	display: inline-block;
+}
+
+.row-right {
+	right: 0;
+	display: inline-block;
+}
+
+/* TARGET MOBILE */
+@media (max-width:480px) {
+	.row-left {
+		display: block;
+	}
+	
+	.row-right {
+		display: block;
+	}
+	
+	.s3 .row {
+		display: block !important;
+		align-items: center;
+	}
+}
+
+.section {
+	padding: 25px;
+	left: 0;
+	right: 0;
+}
+
+.s2 {
+	top: 0;
+	position: sticky;
+	z-index: 90;
+}
+
+.s2 .tag {
+	margin: 0 10px;
+}
+
+.section.s3 {
+	padding: 40px;
+}
+
+.s3 .row {
+	display: flex;
+	align-items: center;
+}
+
+.s3 .row-left {
+	margin: 0 25px 0 auto;
+}
+
+.s3 .profile img {
+	border-radius: 50%;
+	width: 133px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.s3 #my-info {
+	margin: 0 auto;
+	max-width: 700px;
+	line-height: 27px;
+}
+
+.quote {
+	margin: 0;
+	padding: 11px 9px;
+	border-left: 6px solid #2980b9;
+	background: #dcd8d5;
+	color: #222;
+	position: relative;
+}
+
+.quote .text {
+	margin: 0;
+	margin-left: 17px;
+}
+
+.quote .author {
+	margin: 0;
+	text-align: right;
+}
+
+.quote .timestamp {
+	margin: 0;
+	text-align: right;
+}
+
+.tags {
+	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden; 
+	padding: 0;
+}
+
+.tags li {
+	float: left; 
+}
+
+.tag {
+	background: #eee;
+	border-radius: 3px 0 0 3px;
+	color: #444;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 20px 0 23px;
+	position: relative;
+	margin: 0 10px 10px 0;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.tag::before {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+}
+
+.tag::after {
+	background: #fff;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #eee;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: all 0.3s ease;
+}
+
+.tag:hover {
+	background-color: #d2d2d2;
+}
+
+.tag:hover::after {
+	border-left-color: #d2d2d2; 
+}
+
+
+.s3 .row-right {
+	margin: 0 auto 15px 15px;
+}
+
+.section.s4 {
+	padding-top: 0;
+}
+
+.s4 .row {
+	padding-top: 0;
+	text-align: center;
+}
+
+.s4 .row ul li { 
+	text-align: left;
+}
+
+.s4 .row .row-left {
+	margin: 15px auto;
+	text-align: center;
+	min-width: 275px;
+}
+
+.s4 .row .row-right {
+	margin: 15px auto;
+	text-align: center;
+	min-width: 275px;
+}
+
+.s5 .row {
+	padding-top: 0;
+	text-align: center;
+}
+
+.s5 .row ul li { 
+	text-align: left;
+}
+
+.s5 .row .row-left {
+	margin: 15px auto;
+	text-align: center;
+	min-width: 275px;
+}
+
+.s5 .row .row-right {
+	margin: 15px auto;
+	text-align: center;
+	min-width: 275px;
+}
+
+.s7 .row {
+	padding-top: 0;
+	text-align: center;
+}
+
+.s7 .car-showcase {
+	display: inline;
+	margin: 5px auto;
+}
+
+.car-showcase img {
+	display: inline-block;
+	margin: 5px auto;
+	width: 35%;
+	min-width: 245px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border: 1px solid #fff;
+}
+
+.private .row {
+	text-align: center;
+}
+
+.statistics .main {
+	text-align: center;
+}
+
+.chart {
+	margin: 5px auto;
+	padding: 5px;
+	width: 500px;
+}
+
+.chart .data {
+	height: 45px;
+	background: #ddd;
+	margin: 15px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.chart .data .title {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #222;
+	transition: all 0.2s ease;
+}
+
+.chart .data:hover {
+	transform: scale(1.01);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08),0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.chart .data:hover .title {
+	z-index: 101;
+	color: #fff;
+	animation-delay: 0.2s
+}
+
+.chart .data:hover #current-progress {
+	z-index: 0;
+	color: #222;
+}
+
+.chart .data .line {
+	height: 100%;
+	background: #222;
+	width: 1px;
+	border-radius: 0 7px 7px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	z-index: 98;
+}
+
+.chart .data #current-progress {
+	z-index: 99;
+}
+
+@media (max-width:600px) {
+	.chart {
+		margin: 5px auto;
+		padding: 5px;
+		width: 500px;
+		max-width: 97%;
+	}
+}
+
+.contact .title {
+	text-align: center;
+}
+
+.contact .main form {
+	text-align: center;
+}
+
+.contact form input,email,submit,textarea {
+	padding: .8em .6em;
+	margin: 9px auto;
+	display: block;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 4px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 340px;
+	max-width: 98%;
+	font-size: 16px;
+}
+
+.footer .row {
+	text-align: center;
+}

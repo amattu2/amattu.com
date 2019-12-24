@@ -1,0 +1,392 @@
+/* Animations */
+.animate-h { visibility: hidden; }
+
+/* Base Stuff */
+h1,h2,h3,h4,h5,p,li,div,btn,a,label,i,button { font-family: 'Segoe Ui', sans-serif; }
+h1,h2,h3,h4 { font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+a { text-decoration: none; color: inherit; }
+a:hover { color: #222; }
+
+.theme-1 {
+	background-color: #222;
+	color: #fff;
+}
+
+.theme-2 {
+	background-color: #fff;
+	color: #222;
+}
+
+.theme-3 {
+	background-color: #ff6c2c;
+	color: #fff;
+}
+
+.theme-4 {
+	background-color: #3993DD;
+	color: #fff;
+}
+
+.theme-5 {
+	background-color: #016FB9;
+	color: #fff;
+}
+
+.theme-6 {
+	background-color: #eee;
+	color: #222;
+}
+
+
+.sep {
+	width: 100%;
+	height: 1px;
+	background: #eee;
+}
+	
+hr {
+	border-top: 1px solid #8c8b8b;
+}
+
+#load-frame {
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #03A9F4 75%);; 
+	width: 100%; 
+	height: 1000px; 
+	left: 2000px; 
+	position: absolute;
+}
+
+/* NAV */
+#NAV_1 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(41, 43, 44);
+    display: flex;
+    height: 56px;
+    left: 0px;
+    right: 0px;
+    text-decoration: none solid rgb(41, 43, 44);
+    text-size-adjust: 100%;
+    top: 0px;
+    z-index: 99;
+    column-rule-color: rgb(41, 43, 44);
+    align-items: center;
+    perspective-origin: 501px 28px;
+    transform-origin: 501px 28px;
+    caret-color: rgb(41, 43, 44);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(41, 43, 44);
+    font: normal normal normal normal 16px / 24px "Segoe Ui", sans-serif;
+    outline: rgb(41, 43, 44) none 0px;
+    padding: 8px 16px;
+}
+
+#BUTTON_2 {
+    background-position: 0px 0px;
+    color: rgba(0, 0, 0, 0.9);
+    display: none;
+    height: auto;
+    min-height: auto;
+    min-width: auto;
+    position: absolute;
+    right: 16px;
+    text-decoration: none solid rgba(0, 0, 0, 0.9);
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+    width: auto;
+    column-rule-color: rgba(0, 0, 0, 0.9);
+    align-self: flex-start;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal normal normal 20px / 20px sans-serif;
+    outline: rgba(0, 0, 0, 0.9) none 0px;
+    padding: 4px 12px;
+}/*#BUTTON_2*/
+
+#SPAN_3 {
+    background-position: 50% 50%;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.9);
+    content: '""';
+    cursor: default;
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    text-decoration: none solid rgba(0, 0, 0, 0.9);
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 30px;
+    column-rule-color: rgba(0, 0, 0, 0.9);
+    align-self: flex-start;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0) url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") no-repeat scroll 50% 50% / 100% 100% padding-box border-box;
+    border: 0px none rgba(0, 0, 0, 0.9);
+    font: normal normal normal normal 20px / 20px "Segoe Ui", sans-serif;
+    outline: rgba(0, 0, 0, 0.9) none 0px;
+}/*#SPAN_3*/
+
+#IMG_5 {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    height: 30px;
+    text-decoration: none solid rgba(0, 0, 0, 0.9);
+    text-size-adjust: 100%;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 30px;
+    column-rule-color: rgba(0, 0, 0, 0.9);
+    perspective-origin: 15px 15px;
+    transform-origin: 15px 15px;
+    caret-color: rgba(0, 0, 0, 0.9);
+    border: 0px none rgba(0, 0, 0, 0.9);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal normal normal 20px / 30px "Segoe Ui", sans-serif;
+    margin: 0px 8px 0px 0px;
+    outline: rgba(0, 0, 0, 0.9) none 0px;
+}/*#IMG_5*/
+
+#SPAN_6 {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none solid rgba(0, 0, 0, 0.9);
+    text-size-adjust: 100%;
+    white-space: nowrap;
+    column-rule-color: rgba(0, 0, 0, 0.9);
+    caret-color: rgba(0, 0, 0, 0.9);
+    border: 0px none rgba(0, 0, 0, 0.9);
+    font: normal normal normal normal 20px / 30px "Segoe Ui", sans-serif;
+    outline: rgba(0, 0, 0, 0.9) none 0px;
+}
+
+#nav_div {
+    box-sizing: border-box;
+    color: rgb(41, 43, 44);
+    display: flex;
+    height: 40px;
+    min-height: auto;
+    min-width: auto;
+    text-decoration: none solid rgb(41, 43, 44);
+    text-size-adjust: 100%;
+    width: 755.281px;
+    column-rule-color: rgb(41, 43, 44);
+    align-self: center;
+    perspective-origin: 377.641px 20px;
+    transform-origin: 377.641px 20px;
+    caret-color: rgb(41, 43, 44);
+    border: 0px none rgb(41, 43, 44);
+    font: normal normal normal normal 16px / 24px "Segoe Ui", sans-serif;
+    outline: rgb(41, 43, 44) none 0px;
+}
+
+#nav_case {
+    box-sizing: border-box;
+    color: rgb(41, 43, 44);
+    display: flex;
+    height: 40px;
+    list-style: none outside none;
+    margin: 0;
+}
+
+#nav_case a {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.9);
+    display: block;
+    height: 40px;
+    text-align: left;
+    padding: 8px;
+}
+
+#tab {
+    box-sizing: border-box;
+    color: rgb(41, 43, 44);
+    height: 40px;
+    list-style: none outside none;
+}
+
+
+
+/* Content */
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+/* Main */
+.main {
+	width: 100%;
+	height: 420px;
+	margin: 0;
+	background: url("../images/bg.jpg") no-repeat;
+	background-size: 100% auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;	
+}
+
+.main .titles {
+	background-color: rgba(0, 0, 0, 0.38);
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.main .title {
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 46px;
+	margin: 0;
+	z-index: 1;
+}
+
+.main .sub-title {
+	color: #fff;
+	font-size: 26px;
+	margin: 0;
+	z-index: 1;
+	font-weight: 300;	
+}
+
+.products {
+	display: inline-block;
+	width: 100%;	
+	text-align: center;
+}
+
+.products .title {
+	text-align: center;
+	padding: 25px;
+	top: 0px;
+	position: sticky;
+	z-index: 100;
+}
+
+.products .product {
+	min-height: 300px;
+	width: 240px;
+	border-radius: 5px;	
+	margin: 35px 15px;
+	display: inline-block;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.02),0 3px 6px rgba(0, 0, 0, 0.06);
+	transition-delay: 2s;
+	transition: all .2s cubic-bezier(0.68, -0.55, 0.27, 1.55); 	
+	position: relative;
+}
+
+DISABLED.product:hover {
+	transform: scale(1.01); 
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08),0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.product .circle-bg {
+	padding: 15px;
+	border-radius: 5px 5px 0 0;
+}
+
+.product .circle {
+	border-radius: 30%;
+	background: #fff;
+	width: 105px;
+	height: 105px;
+	transition: all .4s ease-in-out;
+	margin: 0 auto;
+}
+
+.product .core {
+	margin-bottom: 0;
+}
+
+.product .core-details {
+	margin: 0;
+	color: rgba(34, 34, 34, 0.51);
+}
+
+.product .purchase {
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;	
+	transition: all 0.2s ease;
+	border-radius: 0 0 5px 5px;
+}
+
+.product .purchase h3 {
+	margin: 0;
+	padding: 15px;
+}
+
+.product .purchase:hover {
+	background: #3993DD;
+	color: #fff;
+}
+
+.purchase:hover h3 {
+	display: none;
+}
+
+.purchase .dedicated {
+	display: none;
+	float: left;
+	cursor: pointer;
+	width: 50%;
+	padding: 15px 0;
+	border-radius: 0 0 0 5px;
+}
+
+.purchase .dedicated:hover {
+	background: #333;
+}
+
+.purchase .shared {
+	display: none;
+	float: right;
+	cursor: pointer;
+	width: 50%;
+	padding: 15px 0;
+	border-radius: 0 0 5px 0;
+}
+
+.purchase .shared:hover { 
+	background: #333;
+}
+
+.purchase:hover .dedicated, .purchase:hover .shared {
+	display: inline;
+}
+
+/* Location Section */
+.locations .title {
+	text-align: center;
+	padding: 25px;
+	top: 0px;
+	position: sticky;
+	z-index: 100;
+}
+
+.locations #map {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08),0 3px 6px rgba(0, 0, 0, 0.12);
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 480px;
+	display: block;
+}
+
+/* Design Section */
+.design .title {
+	text-align: center;
+	padding: 25px;
+	top: 0px;
+	position: sticky;
+	z-index: 100;
+}

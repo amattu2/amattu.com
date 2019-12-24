@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title, Meta -->
+		<title id='title'>Alec M. - Fullstack Web Developer</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+		<meta name='revisit-after' content='7 days'>
+		<meta name='robots' content='index, follow'>
+		<!-- Styles -->
+		<link rel='stylesheet' type='text/css' href='assets/css/index.css?v=0.02a'>
+		<link rel='shortcut icon' type='image/icon' href='assets/images/favicon.png'/>
+		<!-- Scripts -->
+		<script src='assets/js/jquery-3.1.1.min.js'></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-47957210-4', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+	<body>
+		<div class='navbar' id='navbar'>
+			<!-- Logo -->
+			<img class='logo' id='navlogo' src='https://via.placeholder.com/320x320' style='visibility: hidden'/>
+
+			<!-- Centered Text -->
+			<div class='centered' style='margin-left: auto !important; margin-right: 0 !important'>
+				<a href="#about">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#" class='contact-btn' id='contact-btn0' style='visibility: hidden'>Contact</a>
+			</div>
+
+			<!-- Toggle -->
+			<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+		</div>
+
+		<div class='container'>
+			<div id='about' class='about' data-nav='#about'>
+				<div class='text'>
+					<h1>about me</h1>
+					<p class='intro'>
+						Fullstack Web Developer
+					</p>
+
+					<p class='extended'>
+						My name is <span id='name'>Alec M.</span> and I&#39;m <span id='age'>&nbsp;&nbsp;</span> years old.<br/>
+						I&#39;m a fullstack web developer with extensive<br/>
+						experience in HTML, CSS, JavaScript, jQuery,<br/>
+						MySQLi, & PHP.
+						<span style='letter-spacing: -0.7px;'> -- In fact, I love PHP</span>
+						<br/><br/>
+						Beyond the scope of website development,<br/>
+						in my spare time, I have also managed to produce a<br/>
+						plethora of projects in C++, Java, Python, Basic, & more.<br/>
+
+					</p>
+				</div>
+
+				<img src='assets/images/server.resized.jpg' width='590px'/>
+			</div>
+
+			<div class='divsep'></div>
+
+			<div id='portfolio' class='portfolio' data-nav="#portfolio">
+				<div class='website'>
+					<div class="crop">
+					<img src="https://via.placeholder.com/290x150" data-url="https://amattu.com/sites/portfolio" alt="/" />
+					</div>
+					<p class='title'>Rethinking Portfolios</p>
+					<p class='type'>UX Design - Demo Only</p>
+				</div>
+				<div class='website'>
+					<div class="crop">
+					<img src="https://via.placeholder.com/290x150" data-url="https://vipreauto.com" alt="/" />
+					</div>
+					<p class='title'>Automotive</p>
+					<p class='type'>Brand Refresh</p>
+				</div>
+				<div class='website'>
+					<div class="crop">
+					<img src="https://via.placeholder.com/290x150" data-url="https://amattu.com/sites/web-host" alt="/" />
+					</div>
+					<p class='title'>Website Host Company</p>
+					<p class='type'>UX Design - Demo Only</p>
+				</div>
+				<div class='website'>
+					<div class="crop">
+					<img src="https://via.placeholder.com/290x150" data-url="https://amattu.com/sites/ice" alt="/" />
+					</div>
+					<p class='title'>Ice Cream Company</p>
+					<p class='type'>UX Design - Demo Only</p>
+				</div>
+			</div>
+
+			<div class='footer'>
+				<div class='top contact-btn'>
+					<h1 class='title'><a href='links/github' target='_blank'>Want to see more?</a></h1>
+				</div>
+				<div class='bottom'>
+						<p>&copy; Alec M. <span style='text-transform: uppercase'></span> 2013-2020</p>
+				</div>
+			</div>
+		</div>
+
+	<!-- Scripts -->
+	<script src='assets/js/scroll.js'></script>
+	<script src='assets/js/urlpic.js'></script>
+	<script src='assets/js/index.js?v=0.002a'></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	.theme-1 {
+		background-color: #222;
+		color: #fff;
+	}
+	
+	.theme-2 {
+		background-color: #fff;
+		color: #222;
+	}
+	
+	.theme-3 {
+		background-color: #e67e22;
+		color: #fff;
+	}
+	
+	.theme-4 {
+		background-color: #e2e1e0;
+		color: #222;
+	}
+	
+	html {
+		height: 100%;
+		font-family: sans-serif;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+		background: url("bg.jpg");
+		background-size: contain;
+		background-position: center; 
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+		height: 100%;		
+	}
+	
+	.content {
+		padding: 45px;
+		border-radius: 3px;
+		width: 400px;
+	}
+	
+	.content * {
+		font-weight: 300;
+		text-align: center;
+	}
+
+	</style>
+
+	<head>
+		<title>Landing Page</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+		<script src='jquery-3.1.1.min.js'></script>
+		<script src='typed.js'></script>
+	</head>
+	
+	<body>
+		<div class='content theme-2'>
+			<h1>Welcome</h1>
+			<p id='testicles'>Isnt that darn cool</p>
+		</div>
+	</body>
+	<script>
+	$(document).ready(function(){		
+		// Animate Typing 
+		$(function() {
+			$("#testicles").typed({
+				strings: ["Nachfolger, LLC", "Nachfolger 2017", "Isn't this page just cancer!"],
+				typeSpeed: 3,
+				contentType: 'text',
+				showCursor: 'false',
+				backDelay: '1100'									
+			});
+	 	});		  		 					 				
+	});
+	</script>		
+</html>
