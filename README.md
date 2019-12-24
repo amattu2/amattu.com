@@ -1,5 +1,5 @@
 # Introduction
-N/A
+A repository for my website/portfolio (https://amattu.com)
 
 # Usage
 N/A
@@ -11,4 +11,4 @@ N/A
 N/A
 
 # Previews
-![preview image](https://via.placeholder.com/350x240)
+N/A
