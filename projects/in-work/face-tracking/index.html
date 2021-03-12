@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Face Tracker - Nachfolger, LLC</title>
+  <script src="build/tracking-min.js"></script>
+  <script src="build/data/face-min.js"></script>
+
+    <style>
+    body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+    video, canvas {
+        position: absolute;
+        width: 320px;
+        height: 240px;
+    }
+    .tracker-frame {
+        height: 240px;
+        background: rgba(0, 0, 0, 0.9);
+        width: 320px;
+        transition: background 0.3s ease;
+    }
+    .tracker-frame #video {
+        z-index: -1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="tracker-frame" id='tracker-frame'>
+        <video id="video" preload autoplay loop muted></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+<script>
+window.onload = function() {
+    var video = document.getElementById('video');
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    var frame = document.getElementById('tracker-frame');
+    
+    var tracker = new tracking.ObjectTracker('face');
+        tracker.setInitialScale(4);
+        tracker.setStepSize(2);
+        tracker.setEdgesDensity(0.1);
+
+    tracking.track('#video', tracker, { camera: true });
+
+    tracker.on('track', function(event) {
+            if (event.data.length === 0) {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                frame.style.background = 'rgba(0,0,0,0.9)';
+            } else {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                
+                frame.style.background = 'rgba(0,0,0,0.14)';
+                
+                event.data.forEach(function(rect) {
+                    context.strokeStyle = '#fff';
+                    context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+                    context.font = '11px Helvetica';
+                    context.fillStyle = "#fff";
+                    context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
+                    context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+                });
+            }
+    });
+};
+</script>
+
+</body>
+</html>
