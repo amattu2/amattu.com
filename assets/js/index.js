@@ -1,36 +1,16 @@
-$(document).ready(function() {
-  // Load Age
-  var age = new Date().getFullYear()-1999;
-  $('#age').text(age);
+// Set Age
+const age = new Date().getFullYear() - 1999;
+document.getElementById('about-age').textContent = age;
 
+// load Repositories
 
-  // On Hover Change Box Opacity [If: Not a mobile]
-  if (!isMobile()) {
-    $('.website').each(function() {
-      $(this).hover(function() {
-        $('.website').not($(this)).addClass('hover');
-      }, function() {
-        $('.website').not($(this)).removeClass('hover');
-      });
-    });
-  }
-
-  // Mobile Check
-  function isMobile() {
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      return true;
-    }
-  }
-
-  });
-
-  // Bottobar
-  $(".bottom").html("<p>&copy; Alec M. 2013-"+ new Date().getFullYear() +"</p>")
-});
+// load gists
 
 /*
-- Display as cards, probably find the most popular ones? https://api.github.com/users/amattu2/repos
-
-- display as google drive folders (2 line items) https://api.github.com/users/amattu2/gists
+only list repos where I'm owner, sort by activity
+show top 10 of each
+https://docs.github.com/en/rest/reference/repos#list-repositories-for-a-user
+https://api.github.com/users/amattu2/repos
+https://api.github.com/users/amattu2/gists
 - When a repo was created less than 6mo ago, add a NEW badge like google did for the "Share" file on google drive in shared workspaces
 */
