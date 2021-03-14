@@ -27,10 +27,8 @@ div.space {
 
 /* Navigation */
 .navbar {
-  overflow: hidden;
   background-color: var(--theme-color-base);
-  min-height: 92px;
-  transition: all 0.2s ease;
+  min-height: 65px;
   display: flex;
   align-items: center;
   top: 0;
@@ -118,7 +116,7 @@ div.space {
   display: grid;
   grid-template-columns: auto 590px;
   grid-column-gap: 20px;
-  padding: 25px 0;
+  padding: 25px 100px;
 }
 
 .about-text {
@@ -172,21 +170,17 @@ div.space {
 
 }
 
-/* Portfolio */
+/* Website Portfolio Section */
 .portfolio-container {
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 310px;
-  grid-gap: 20px;
   margin: 10px 100px;
-  margin-bottom: 30px;
   padding: 25px 0;
 }
 
-.portfolio-title {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  text-align: left;
+.portfolio-container .website-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, 290px);
 }
 
 .portfolio-container .website {
