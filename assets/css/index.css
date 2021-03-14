@@ -1,3 +1,4 @@
+/* General Theme */
 :root {
   --theme-color-base: #3b3b3b;
 }
@@ -11,18 +12,8 @@ html {
   font-family: sans-serif;
 }
 
-div.space {
-  width: 100%;
-  height: 35px;
-  margin: 0;
-  padding: 0;
-}
-
-.divsep {
-  height: 1px;
-  width: 100%;
-  padding: 0;
-  background: rgba(17, 17, 17, 0.09);
+.border-bottom {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 /* Navigation */
@@ -112,7 +103,6 @@ div.space {
 
 /* About Section */
 .about-container {
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
   display: grid;
   grid-template-columns: auto 590px;
   grid-column-gap: 20px;
