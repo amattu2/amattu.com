@@ -16,6 +16,10 @@ html {
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
 }
 
+a {
+  color: #3498db;
+}
+
 /* Navigation */
 .navbar {
   background-color: var(--theme-color-base);
