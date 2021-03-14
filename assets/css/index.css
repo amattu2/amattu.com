@@ -111,6 +111,10 @@ html {
 
 .about-text {
   margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 6px;
+  background: #f2f2f2;
 }
 
 .about-text-title {
