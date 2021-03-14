@@ -221,6 +221,67 @@ a {
   margin-bottom: 0;
 }
 
+/* GitHub Repositories Section */
+.repository-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 310px);
+}
+
+.triple-item-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+  position: relative;
+}
+
+.triple-item-card .card-image {
+  padding: 8px 0;
+  padding-right: 14px;
+}
+
+.triple-item-card .card-image img {
+  width: 40px;
+}
+
+.triple-item-card .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #3b3b3b;
+}
+
+.triple-item-card .card-title .card-new-badge {
+  border: 1px solid #3498db;
+  border-radius: 3px;
+  color: #3498db;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  margin-left: 3px;
+}
+
+.triple-item-card .card-content {
+  margin-right: auto;
+  min-height: 60px;
+  position: relative;
+}
+
+.triple-item-card .card-description {
+  font-size: 13px;
+}
+
+.triple-item-card .card-footer {
+  font-size: 12px;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+}
+
 /* GitHub Gists Section */
 .gist-grid {
   display: grid;
