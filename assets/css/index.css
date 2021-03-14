@@ -123,14 +123,13 @@ html {
 }
 
 .about-text-subtitle {
-  color: #555;
+  color: var(--theme-color-base);
   font-size: 25px;
   margin: 0 0 20px 0;
-  text-transform: lowercase;
 }
 
 .about-text-content {
-  color: #666;
+  color: var(--theme-color-base);
   margin: 0;
   line-height: 23px;
 }
@@ -163,8 +162,7 @@ html {
 /* Website Portfolio Section */
 .portfolio-container {
   box-sizing: border-box;
-  margin: 10px 100px;
-  padding: 25px 0;
+  padding: 35px 100px;
 }
 
 .portfolio-container .website-grid {
