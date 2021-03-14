@@ -132,9 +132,16 @@ a {
   line-height: 23px;
 }
 
+.about-container .about-image {
+  position: relative;
+}
+
 .about-container img {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
   transition: box-shadow 0.2s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media screen and (min-width: 1600px) {
