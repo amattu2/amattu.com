@@ -3,21 +3,6 @@ $(document).ready(function() {
   var age = new Date().getFullYear()-1999;
   $('#age').text(age);
 
-  // Detect Position
-  $(window).on('scroll', function() {
-    $("[data-nav]").each(function(i) {
-      var self = $(this);
-      var data = $(this).data('nav');
-      var link = $('a[href="'+data+'"]');
-      var bottom = $(self).position().top + $(self).outerHeight(true);
-
-      if ($('body').scrollTop() > $(self).position().top-80-$(".navbar").height() && $('body').scrollTop() < bottom) {
-        $(link).addClass("special");
-      } else {
-        $(link).removeClass('special');
-      }
-    });
-  });
 
   // On Hover Change Box Opacity [If: Not a mobile]
   if (!isMobile()) {
@@ -42,3 +27,9 @@ $(document).ready(function() {
   // Bottobar
   $(".bottom").html("<p>&copy; Alec M. 2013-"+ new Date().getFullYear() +"</p>")
 });
+
+/*
+- Display as cards, probably find the most popular ones? https://api.github.com/users/amattu2/repos
+
+- display as google drive folders (2 line items) https://api.github.com/users/amattu2/gists
+*/
