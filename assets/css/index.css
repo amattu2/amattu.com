@@ -32,16 +32,6 @@ a {
   z-index: 98;
 }
 
-.navbar .logo {
-  border-radius: 50%;
-  height: 82px;
-  margin: 0 0 0 auto;
-}
-
-.navbar .centered {
-  margin: 0 auto;
-}
-
 .navbar a {
   color: #fff;
   padding: 6px;
@@ -181,7 +171,7 @@ a {
 
 .container .website {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
-  border-radius: 2px;
+  border-radius: 3px;
   box-sizing: border-box;
   background: #fff;
   cursor: pointer;
@@ -222,4 +212,31 @@ a {
   color: #8e8e8e;
   margin-top: 4px;
   margin-bottom: 0;
+}
+
+/* GitHub Gists Section */
+.gist-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 260px);
+}
+
+.single-item-card {
+  cursor: pointer;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  padding: 9px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-item-card .material-icons {
+  margin-right: 12px;
+}
+
+.single-item-card a {
+  font-size: 14px;
+  margin-right: auto;
+  color: var(--theme-color-base);
 }
