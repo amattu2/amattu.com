@@ -50,15 +50,11 @@ div.space {
 }
 
 .navbar a {
-  float: left;
-  display: block;
   color: #fff;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
-  transition: all 0.2s ease;
-  letter-spacing: 1.2px;
+  transition: color 0.2s ease;
   text-transform: lowercase;
   font-weight: 600;
   margin: 0 10px;
@@ -68,18 +64,12 @@ div.space {
   color: #999;
 }
 
-.navbar a.special {
-  background: #fff;
-  color: var(--theme-color-base);
+.navbar a:first-of-type {
+  margin-left: auto;
 }
 
-.navbar a.special:hover {
-  background: #ddd;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.88), 0 3px 6px rgba(0, 0, 0, 0.9);
-}
-
-.navbar .icon {
-  display: none;
+.navbar a:last-of-type {
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 600px) {
