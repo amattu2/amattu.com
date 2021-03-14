@@ -3,7 +3,7 @@
 }
 
 body,
-HTML {
+html {
   background: #f7f7f7;
   color: var(--theme-color-base);
   margin: 0;
@@ -96,10 +96,6 @@ div.space {
     display: block;
     position: absolute;
     right: 0;
-  }
-
-  .navbar .logo {
-   display: none;
   }
 }
 
