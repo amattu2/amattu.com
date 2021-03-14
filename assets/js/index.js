@@ -32,4 +32,5 @@ $(document).ready(function() {
 - Display as cards, probably find the most popular ones? https://api.github.com/users/amattu2/repos
 
 - display as google drive folders (2 line items) https://api.github.com/users/amattu2/gists
+- When a repo was created less than 6mo ago, add a NEW badge like google did for the "Share" file on google drive in shared workspaces
 */
