@@ -168,18 +168,18 @@ a {
 }
 
 /* Website Portfolio Section */
-.portfolio-container {
+.container {
   box-sizing: border-box;
   padding: 35px 100px;
 }
 
-.portfolio-container .website-grid {
+.container .website-grid {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fill, 290px);
 }
 
-.portfolio-container .website {
+.container .website {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
   border-radius: 2px;
   box-sizing: border-box;
@@ -191,16 +191,16 @@ a {
   opacity: 1;
 }
 
-.portfolio-container .website.hover {
+.container .website.hover {
   opacity: 0.3;
 }
 
-.portfolio-container .website:hover {
+.container .website:hover {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
   transform: scale(1.01);
 }
 
-.portfolio-container * {
+.container * {
   user-select: none;
 }
 
