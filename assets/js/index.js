@@ -37,7 +37,7 @@ function fetchGitHubRepos() {
   let cache = localStorage.getItem('github_repo_cache') || null;
   cache = cache ? JSON.parse(cache) : null;
   let created = cache && typeof(cache) === "object" ? moment(cache.Created, cache_format, true) : null;
-  if (cache && typeof(cache) === "object" && cache.Repositories && created && created.isValid() && moment().diff(created, "days") > cache_period) {
+  if (cache && typeof(cache) === "object" && cache.Repositories && created && created.isValid() && moment().diff(created, "days") < cache_period) {
     buildGitHubRepos(cache.Repositories);
     return true;
   }
