@@ -66,7 +66,7 @@ function buildGitHubRepos(repos = []) {
   // Variables
   repos.forEach(repo => {
     // Checks
-    if (!repo.name || !repo.description) {
+    if (!repo.name || !repo.description || !repo.url) {
       return false;
     }
 
@@ -82,6 +82,9 @@ function buildGitHubRepos(repos = []) {
     // Attributes
     div.classList.add('triple-item-card');
     div.innerHTML = `<div class='card-image'>${img_element}</div><div class='card-content'><div class='card-title'>${name}${new_badge}</div><div class='card-description'>${description}</div><div class='card-footer'><div class='card-date'>${updated.fromNow()}</div></div></div>`;
+    div.onclick = function() {
+      window.open(url);
+    };
 
     // Append
     fragment.appendChild(div);
