@@ -12,9 +12,12 @@ const api_endpoints = {
 const age = new Date().getFullYear() - 1999;
 document.getElementById('about-age').textContent = age;
 
-// load Repositories
+// Load Repositories
+fetchGitHubRepos();
 
-// load gists
+// Load Gists
+fetchGitHubGists();
+
 /*
 When a repo was created less than 6mo ago, add a NEW badge like google did for the "Share" file on google drive in shared workspaces
 */
@@ -52,7 +55,40 @@ function fetchGitHubRepos() {
 }
 
 function buildGitHubRepos(repos = []) {
+  // Check Data
+  if (!repos || !(repos instanceof Array)) {
+    return false;
+  }
 
+  // Variables
+  let fragment = document.createDocumentFragment();
+
+  // Variables
+  repos.forEach(repo => {
+    // Checks
+    if (!repo.name || !repo.description) {
+      return false;
+    }
+
+    // Variables
+    let name = repo.name.length > 23 ? repo.name.substr(0, 23) + "..." : repo.name;
+    description = repo.description.length > 65 ? repo.description.substr(0, 65) + "..." : repo.description;
+    let updated = moment(repo.updated_at);
+    let url = repo.html_url;
+    let div = document.createElement('div');
+    let img_element = "<img src='assets/images/GitHub-Mark-120px-plus.png' alt='GitHub Logo' />";
+    let new_badge = moment().diff(moment(repo.created_at), "months") < 6 ? "<span class='card-new-badge'>New</span>" : "";
+
+    // Attributes
+    div.classList.add('triple-item-card');
+    div.innerHTML = `<div class='card-image'>${img_element}</div><div class='card-content'><div class='card-title'>${name}${new_badge}</div><div class='card-description'>${description}</div><div class='card-footer'><div class='card-date'>${updated.fromNow()}</div></div></div>`;
+
+    // Append
+    fragment.appendChild(div);
+  });
+
+  // Append
+  document.getElementById('github-repositories').appendChild(fragment);
 }
 
 /**
