@@ -80,6 +80,15 @@ function fetchGitHubRepos() {
   return false;
 }
 
+/**
+ * Build GitHub Repositories UI
+ *
+ * @param {Array} [GitHub Repos Object]
+ * @return {Void}
+ * @throws None
+ * @author Alec M. <https://amattu.com>
+ * @date 2021-03-17T09:53:31-040
+ */
 function buildGitHubRepos(repos = []) {
   // Check Data
   if (!repos || !(repos instanceof Array)) {
@@ -118,6 +127,57 @@ function buildGitHubRepos(repos = []) {
 
   // Append
   document.getElementById('github-repositories').appendChild(fragment);
+}
+
+/**
+ * Build GitHub Gists UI
+ *
+ * @param {Array} [GitHub Gist Object]
+ * @return {Void}
+ * @throws None
+ * @author Alec M. <https://amattu.com>
+ * @date 2021-03-17T09:52:55-040
+ */
+function buildGitHubGists(gists = []) {
+  // Check Data
+  if (!gists || !(gists instanceof Array)) {
+    return false;
+  }
+
+  // Variables
+  let fragment = document.createDocumentFragment();
+
+  // Variables
+  gists.forEach(gist => {
+    // Checks
+    if (!gist.html_url || !gist.files) {
+      return false;
+    }
+    if (!Object.keys(gist.files)[0]) {
+      return false;
+    }
+
+    // Variables
+    let first_file_name = gist.files[Object.keys(gist.files)[0]].filename || "No Name";
+    let updated = moment(gist.updated_at);
+    let url = gist.html_url;
+    let div = document.createElement('div');
+
+    // Attributes
+    div.classList.add('single-item-card');
+    div.innerHTML = `<span class="material-icons">source</span><a target="_blank" src='${url}'>${first_file_name}</a>`;
+    div.onclick = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.open(url);
+    };
+
+    // Append
+    fragment.appendChild(div);
+  });
+
+  // Append
+  document.getElementById('github-gists').appendChild(fragment);
 }
 
 /**
