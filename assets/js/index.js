@@ -18,19 +18,42 @@ fetchGitHubRepos();
 // Load Gists
 fetchGitHubGists();
 
-/*
-When a repo was created less than 6mo ago, add a NEW badge like google did for the "Share" file on google drive in shared workspaces
-*/
-
+/**
+ * Fetch GitHub Gists
+ * See cache_period
+ *
+ * @return {Boolean} Cached value used
+ * @throws None
+ * @author Alec M. <https://amattu.com>
+ * @date 2021-03-17T09:36:04-040
+ */
 function fetchGitHubGists() {
+  // Check Cache Validity
+  let cache = localStorage.getItem('github_gist_cache') || null;
+  cache = cache ? JSON.parse(cache) : null;
+  let created = cache && typeof(cache) === "object" ? moment(cache.Created, cache_format, true) : null;
+  if (cache && typeof(cache) === "object" && cache.Gists && created && created.isValid() && moment().diff(created, "days") < cache_period) {
+    buildGitHubGists(cache.Gists);
+    return true;
+  }
 
+  // Fetch Repositories
+  cache = {Gists: [], Created: moment().format(cache_format)};
+  get(api_endpoints.github_gists).then(repos => {
+    cache.Gists = repos;
+    localStorage.setItem('github_gist_cache', JSON.stringify(cache));
+    buildGitHubGists(repos);
+  });
+
+  // Default
+  return false;
 }
 
 /**
  * Fetch GitHub Repos
  * Cache Period: 10d
  *
- * @return {Object} Repository Object
+ * @return {Boolean} Cache value used
  * @throws None
  * @author Alec M. <https://amattu.com>
  * @date 2021-03-16T20:00:43-040
@@ -52,6 +75,9 @@ function fetchGitHubRepos() {
     localStorage.setItem('github_repo_cache', JSON.stringify(cache));
     buildGitHubRepos(repos);
   });
+
+  // Default
+  return false;
 }
 
 function buildGitHubRepos(repos = []) {
