@@ -20,7 +20,7 @@ fetchGitHubGists();
 
 /**
  * Fetch GitHub Gists
- * See cache_period
+ * See: cache_period
  *
  * @return {Boolean} Cached value used
  * @throws None
@@ -51,7 +51,7 @@ function fetchGitHubGists() {
 
 /**
  * Fetch GitHub Repos
- * Cache Period: 10d
+ * See: cache_period
  *
  * @return {Boolean} Cache value used
  * @throws None
