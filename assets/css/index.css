@@ -150,6 +150,11 @@ noscript {
   user-select: none;
 }
 
+.website a {
+  text-decoration: unset;
+  color: unset;
+}
+
 .website .crop {
   height: 150px;
   overflow: hidden;
@@ -158,14 +163,12 @@ noscript {
 .website .title {
   text-align: left;
   font-weight: 300;
-  letter-spacing: 1.5px;
   font-size: 19px;
   margin-bottom: 0;
 }
 
 .website .type {
   text-align: left;
-  color: #8e8e8e;
   margin-top: 4px;
   margin-bottom: 0;
 }
