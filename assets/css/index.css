@@ -20,6 +20,13 @@ a {
   color: #3498db;
 }
 
+.website a,
+.triple-item-card a,
+.single-item-card a {
+  text-decoration: unset;
+  color: unset;
+}
+
 noscript {
   text-align: center;
   padding: 10px;
@@ -148,11 +155,6 @@ noscript {
 
 .container * {
   user-select: none;
-}
-
-.website a {
-  text-decoration: unset;
-  color: unset;
 }
 
 .website .crop {
