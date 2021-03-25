@@ -165,7 +165,7 @@ function buildGitHubGists(gists = []) {
 
     // Attributes
     div.classList.add('single-item-card');
-    div.innerHTML = `<span class="material-icons">source</span><a target="_blank" rel="noreferrer" src='${url}'>${first_file_name}</a>`;
+    div.innerHTML = `<span class="material-icons">source</span><a target="_blank" rel="noreferrer" href='${url}'>${first_file_name}</a>`;
     div.onclick = function(e) {
       e.preventDefault();
       e.stopPropagation();
