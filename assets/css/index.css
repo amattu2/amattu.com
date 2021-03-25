@@ -20,6 +20,15 @@ a {
   color: #3498db;
 }
 
+noscript {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  background: #e74c3c;
+  color: #fff;
+}
+
 /* Navigation */
 .navbar {
   background-color: var(--theme-color-base);
