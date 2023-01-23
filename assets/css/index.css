@@ -1,4 +1,24 @@
-/* General Theme */
+/*
+ * Produced: Mon Jan 23 2023
+ * Author: Alec M.
+ * GitHub: https://amattu.com/links/github
+ * Copyright: (C) 2023 Alec M.
+ * License: License GNU Affero General Public License v3.0
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 :root {
   --theme-color-base: #3b3b3b;
 }
@@ -20,11 +40,14 @@ a {
   color: #3498db;
 }
 
-.website a,
-.triple-item-card a,
-.single-item-card a {
-  text-decoration: unset;
-  color: unset;
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--theme-color-base);
+  opacity: 0.4;
+  border: 0;
+  border-radius: 3px;
 }
 
 noscript {
@@ -36,12 +59,19 @@ noscript {
   color: #fff;
 }
 
-/* Navigation */
+.website a,
+.triple-item-card a,
+.single-item-card a {
+  text-decoration: unset;
+  color: unset;
+}
+
 .navbar {
   background-color: var(--theme-color-base);
-  min-height: 65px;
+  min-height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
   top: 0;
   position: sticky;
   box-shadow: none;
@@ -63,19 +93,10 @@ noscript {
   color: #999;
 }
 
-.navbar a:first-of-type {
-  margin-left: auto;
-}
-
-.navbar a:last-of-type {
-  margin-right: 15px;
-}
-
-/* About Section */
 .about-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: auto 590px;
-  grid-column-gap: 20px;
+  grid-column-gap: 20px; */
   padding: 25px 100px;
 }
 
@@ -113,14 +134,14 @@ noscript {
 }
 
 .about-container img {
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
+    0 25px 55px 0 rgba(0, 0, 0, 0.21);
   transition: box-shadow 0.2s ease;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Website Portfolio Section */
 .container {
   box-sizing: border-box;
   padding: 35px 100px;
@@ -149,7 +170,8 @@ noscript {
 }
 
 .container .website:hover {
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
+    0 25px 55px 0 rgba(0, 0, 0, 0.21);
   transform: scale(1.01);
 }
 
@@ -175,7 +197,6 @@ noscript {
   margin-bottom: 0;
 }
 
-/* GitHub Repositories Section */
 .repository-grid {
   display: grid;
   grid-gap: 20px;
@@ -185,6 +206,7 @@ noscript {
 .triple-item-card {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +243,7 @@ noscript {
 
 .triple-item-card .card-content {
   margin-right: auto;
-  min-height: 60px;
+  min-height: 65px;
   position: relative;
 }
 
@@ -237,7 +259,6 @@ noscript {
   opacity: 0.8;
 }
 
-/* GitHub Gists Section */
 .gist-grid {
   display: grid;
   grid-gap: 20px;
@@ -265,7 +286,6 @@ noscript {
   color: var(--theme-color-base);
 }
 
-/* Mobile Views */
 @media screen and (max-width: 1300px) {
   .about-container {
     padding: 10px;
