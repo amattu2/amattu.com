@@ -5,7 +5,7 @@ include('php/head.php');
 <html>
 	<nav id="NAV_1">
 		<!-- Brand Icon -->
-		<a href="/" id="A_4"><img src="https://nachfolger.co/ui/images/favicon.png" width="30" height="30" alt="" id="IMG_5"/><span id="SPAN_6">Nachfolger, LLC</span></a>
+		<a href="/" id="A_4"><img src="/" width="30" height="30" alt="" id="IMG_5"/><span id="SPAN_6">Company, LLC</span></a>
 		<div id="nav_div">
 			<!-- Links -->
 			<ul id="nav_case">
@@ -29,7 +29,7 @@ include('php/head.php');
 	<div id='slide-frame'>
 		<div class='main' id='particles-js'>
 			<div class='titles'>
-				<h3 class='title'>Nachfolger, LLC</h3>
+				<h3 class='title'>Company, LLC</h3>
 				<h4 class='sub-title'>Hosting & Design Services</h4>
 			</div>
 		</div>
@@ -116,26 +116,10 @@ include('php/head.php');
 			</div>
 
 			<div class='designs'>
-				<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-url="https://nachfolger.co" alt="/" />
-				<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-url="https://jsrcars.com" alt="/" />
-				<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-url="https://vipreauto.com" alt="/" />
+				<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-url="https://example.com" alt="/" />
+				<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-url="https://example.com" alt="/" />
+				<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-url="https://example.com" alt="/" />
 			</div>
-
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 		</div>
 
 		<script src='js/jquery-3.1.1.min.js'></script>

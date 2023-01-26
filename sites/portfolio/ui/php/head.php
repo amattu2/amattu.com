@@ -2,16 +2,12 @@
 /* Base Includes */
 require('ui/php/session.php');
 
-/* PRE-HEADERS */
-// Remote Port
-echo "<!-- User Addr: $_SERVER[REMOTE_ADDR]:$_SERVER[REMOTE_PORT] -->\n";
-	
 /* HEADERS */
 // Beta/Index Header
 echo"
 <!DOCTYPE html>
 <head>
-	<title>Portfolio - Nachfolger, LLC</title>
+	<title>Portfolio</title>
 	<link rel='stylesheet' type='text/css' href='/sites/portfolio/ui/css/index.css'>
 	<link rel='stylesheet' type='text/css' href='/sites/portfolio/ui/css/sweetalert.css'>
 	<link rel='stylesheet' type='text/css' href='/sites/portfolio/ui/css/font-awesome.min.css'>
@@ -21,7 +17,7 @@ echo"
 	<script src='/sites/portfolio/ui/js/typed.js'></script>
 	<script src='/sites/portfolio/ui/js/sweetalert.min.js'></script>
 	<meta name='revisit-after' content='7 days'>
-	<meta name='robots' content='index, follow'>	
+	<meta name='robots' content='index, follow'>
 </head>
 \n";
 

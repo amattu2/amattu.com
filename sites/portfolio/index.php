@@ -1,7 +1,7 @@
 <?php
 
 // Include Head
-include('ui/php/head.php');
+include 'ui/php/head.php';
 ?>
 <html>
 	<body>
@@ -14,22 +14,22 @@ include('ui/php/head.php');
 						<h2 id='welcome'></h2>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!-- Info -->
 		<div class='section s2 theme-2'>
 			<div class='row'>
 				<div class='row-left'>
 					<div class='user-info'>
 						<ul class='tags'>
-							<li><a class='tag' title='Session Status'>&nbsp;<b><i class="fa <?php echo $session_stat_icon; ?>"></i></b></a></li>				
-						</ul>					
+							<!-- <li><a class='tag' title='Session Status'>&nbsp;<b><i class="fa <?php echo $session_stat_icon; ?>"></i></b></a></li> -->
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Main Info -->
 		<div class='section s3 theme-2'>
 			<div class='row'>
@@ -38,7 +38,9 @@ include('ui/php/head.php');
 				</div>
 				<div class='row-right'>
 					<h2>About Me</h2>
-					<p id='my-info'>Hi. My name is XXXX and I&#39;m <span id='age'></span> years old. Since I was a kid I&#39;ve always had an interest in programming and web development. Feel free to explore my projects or sites I've made.</p>
+					<p id='my-info'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 					<!-- Skills -->
 					<ul class='tags'>
 						<h4>Skills</h4>
@@ -47,24 +49,24 @@ include('ui/php/head.php');
 						<li><a class='tag animate-h'>CSS</a></li>
 						<li><a class='tag animate-h'>Javascript</a></li>
 						<li><a class='tag animate-h'>Java</a></li>
-						
-					</ul>	
+
+					</ul>
 					<hr />
-					<!-- Interests -->	
+					<!-- Interests -->
 					<ul class='tags'>
 						<h4 style='margin-top: 0'>Interests</h4>
 						<li><a class='tag animate-h'>BMWs</a></li>
-						<li><a class='tag animate-h'>Turbos</a></li>	
+						<li><a class='tag animate-h'>Turbos</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-				
+
 		<!-- Projects -->
 		<div class='section s4 theme-4'>
 			<div class='row'>
 				<h2 class='text-thin'>Project Collection</h2>
-				
+
 				<div class='row-left case theme-2'>
 					<h4>Projects</h4>
 					<div class='sep'></div>
@@ -72,7 +74,7 @@ include('ui/php/head.php');
 						<li><a href='#'>XXX</a></li>
 						<li><a href='#'>XXX</a></li>
 						<li><a href='#'>XXX</a></li>
-						<li><a href='#'>XXX</a></li>						
+						<li><a href='#'>XXX</a></li>
 					</ul>
 				</div>
 				<div class='row-right case theme-2'>
@@ -82,12 +84,12 @@ include('ui/php/head.php');
 						<li><a href='#'>XXX</a></li>
 						<li><a href='#'>XXX</a></li>
 						<li><a href='#'>XXX</a></li>
-						<li><a href='#'>XXX</a></li>						
-					</ul>					
-				</div>				
+						<li><a href='#'>XXX</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		
+
 		<!-- Education -->
 		<div class='section s5 theme-4'>
 			<div class='row centered'>
@@ -110,8 +112,8 @@ include('ui/php/head.php');
 						<li><a href='#'>XXX</a></li>
 						<li><a href='#'>XXX</a></li>
 						<li><a href='#'>XXX</a></li>
-					</ul>					
-				</div>				
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -120,13 +122,13 @@ include('ui/php/head.php');
 			<div class='main text-thin'>
 				<h1>Statistical Data</h1>
 			</div>
-			
+
 			<div class='chart'>
 				<div class='data'>
 					<h4 class='title'>Javascript Knowledge</h4>
 					<div class='line theme-3' data-progress='65'><span id='current-progress'></span></div>
 				</div>
-							
+
 				<div class='data'>
 					<h4 class='title'>PHP Knowledge</h4>
 					<div class='line theme-3' data-progress='87'><span id='current-progress'></span></div>
@@ -135,16 +137,16 @@ include('ui/php/head.php');
 				<div class='data'>
 					<h4 class='title'>HTML/CSS Knowledge</h4>
 					<div class='line theme-3' data-progress='100'><span id='current-progress'></span></div>
-				</div>								
+				</div>
 			</div>
 		</div>
-			
+
 		<!-- Contact Me -->
-		<div class='section contact theme-3'>			
+		<div class='section contact theme-3'>
 			<div class='title text-thin'>
 				<h1>Ask Me A Question</h1>
-			</div>	
-			
+			</div>
+
 			<div class='main'>
 				<form method='none' name='QA'>
 					<input type='hidden' name='time' value="" />
@@ -152,18 +154,18 @@ include('ui/php/head.php');
 					<textarea name='question' placeholder='Your question'></textarea>
 					<input type='submit' name='qa' placeholder='Ask' />
 				</form>
-			</div>	
-		</div> 			
+			</div>
+		</div>
 
 		<!-- Footer -->
 		<div class='section footer theme-1'>
 			<div class='row'>
-				<h3 class='text-thin'>Nachfolger LLC, 2017</h3>
-				<p>Design By Alec M. | ARR</p>		
+				<h3 class='text-thin'>Company LLC, 2017</h3>
+				<p>Design By Alec M.</p>
 			</div>
-		</div>	
-		
-		<!-- Scripts -->					
+		</div>
+
+		<!-- Scripts -->
 		<script src='/sites/portfolio/ui/js/index.js'></script>
 	</body>
 </html>

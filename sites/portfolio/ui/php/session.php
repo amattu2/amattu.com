@@ -12,7 +12,6 @@ if (session_status() == PHP_SESSION_NONE) {
 // Session Control
 function activate_session() {
 	// Session Params
-	session_name("Nachfolger");
 	session_start();
 	// Session Variables
 	$_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
