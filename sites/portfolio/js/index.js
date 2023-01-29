@@ -55,13 +55,12 @@ $(document).ready(function () {
   var text_one = "Welcome to my portfolio..";
   var text_two = "I'm a.. Web Designer";
   var text_three = "I'm a.. Backend Developer";
-  var text_four = "Spreading the audacity of equality since 1999";
 
   // Animate Typing
   $(function () {
     $(window).scroll();
     $("#welcome").typed({
-      strings: [text_one, text_two, text_three, text_four],
+      strings: [text_one, text_two, text_three],
       typeSpeed: 0,
       contentType: "html",
       showCursor: "false",
