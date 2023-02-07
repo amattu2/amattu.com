@@ -245,6 +245,7 @@ noscript {
   margin-right: auto;
   min-height: 65px;
   position: relative;
+  width: 100%;
 }
 
 .triple-item-card .card-description {
