@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Profile Picture
-  $("#profile-picture").attr("src", "https://via.placeholder.com/150x150");
+  $("#profile-picture").attr("src", "https://api.placeholder.app/image/150x150");
 
   // Animate slide-in
   $(window).scroll(function () {
