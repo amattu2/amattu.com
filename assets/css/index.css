@@ -19,8 +19,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
 :root {
-  --theme-color-base: #3b3b3b;
+  --theme-color-base: #272727;
+  --standard-radius: 3px;
 }
 
 body,
@@ -29,7 +32,8 @@ html {
   color: var(--theme-color-base);
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
 }
 
 .border-bottom {
@@ -47,7 +51,18 @@ hr {
   background-color: var(--theme-color-base);
   opacity: 0.4;
   border: 0;
-  border-radius: 3px;
+  border-radius: var(--standard-radius);
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2em;
 }
 
 noscript {
@@ -94,9 +109,6 @@ noscript {
 }
 
 .about-container {
-  /* display: grid;
-  grid-template-columns: auto 590px;
-  grid-column-gap: 20px; */
   padding: 25px 100px;
 }
 
@@ -104,47 +116,33 @@ noscript {
   margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px;
-  border-radius: 6px;
+  border-radius: var(--standard-radius);
   background: #f2f2f2;
 }
 
 .about-text-title {
-  font-size: 4em;
-  font-weight: 300;
-  letter-spacing: -2px;
   margin: 0 0 10px 0;
   white-space: nowrap;
   text-transform: lowercase;
 }
 
 .about-text-subtitle {
-  color: var(--theme-color-base);
   font-size: 25px;
   margin: 0 0 20px 0;
 }
 
 .about-text-content {
-  color: var(--theme-color-base);
   margin: 0;
   line-height: 23px;
-}
-
-.about-container .about-image {
-  position: relative;
-}
-
-.about-container img {
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
-    0 25px 55px 0 rgba(0, 0, 0, 0.21);
-  transition: box-shadow 0.2s ease;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .container {
   box-sizing: border-box;
   padding: 35px 100px;
+}
+
+.container * {
+  user-select: none;
 }
 
 .container .website-grid {
@@ -155,13 +153,13 @@ noscript {
 
 .container .website {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: var(--standard-radius);
   box-sizing: border-box;
   background: #fff;
   cursor: pointer;
   padding: 10px;
   width: 290px;
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.1s ease;
   opacity: 1;
 }
 
@@ -169,30 +167,23 @@ noscript {
   opacity: 0.3;
 }
 
-.container .website:hover {
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
-    0 25px 55px 0 rgba(0, 0, 0, 0.21);
-  transform: scale(1.01);
-}
-
-.container * {
-  user-select: none;
-}
-
 .website .crop {
   height: 150px;
   overflow: hidden;
+  border-radius: var(--standard-radius);
 }
 
 .website .title {
   text-align: left;
-  font-weight: 300;
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 18px;
   margin-bottom: 0;
+  margin-top: 6px;
 }
 
 .website .type {
   text-align: left;
+  font-size: 13px;
   margin-top: 4px;
   margin-bottom: 0;
 }
@@ -206,9 +197,10 @@ noscript {
 .triple-item-card {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: var(--standard-radius);
   display: flex;
   justify-content: center;
+  transition: box-shadow 0.1s ease;
   align-items: center;
   padding: 12px 14px;
   cursor: pointer;
@@ -228,17 +220,18 @@ noscript {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 3px;
-  color: #3b3b3b;
+  color: var(--theme-color-base);
 }
 
 .triple-item-card .card-title .card-new-badge {
   border: 1px solid #3498db;
-  border-radius: 3px;
+  border-radius: var(--standard-radius);
   color: #3498db;
   font-size: 12px;
   text-transform: uppercase;
   padding: 1px 5px;
-  margin-left: 3px;
+  position: absolute;
+  right: 0;
 }
 
 .triple-item-card .card-content {
@@ -269,7 +262,8 @@ noscript {
 .single-item-card {
   background: #fff;
   border: 1.5px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  transition: box-shadow 0.1s ease;
+  border-radius: var(--standard-radius);
   display: flex;
   cursor: pointer;
   padding: 9px;
@@ -285,6 +279,14 @@ noscript {
   font-size: 14px;
   margin-right: auto;
   color: var(--theme-color-base);
+}
+
+.container .website:hover,
+.container .triple-item-card:hover,
+.container .single-item-card:hover {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
+    0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  transform: scale(1.01);
 }
 
 @media screen and (max-width: 1300px) {
@@ -307,11 +309,11 @@ noscript {
     padding: 10px;
   }
 
-  .container h1 {
+  .container h2 {
     text-align: center;
   }
 
-  .container h1 span {
+  .container h2 span {
     display: none;
   }
 
@@ -319,5 +321,10 @@ noscript {
   .container .repository-grid,
   .container .gist-grid {
     justify-content: center;
+  }
+
+  .container .repository-grid div:nth-child(n + 6),
+  .container .gist-grid div:nth-child(n + 6) {
+    display: none;
   }
 }

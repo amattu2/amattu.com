@@ -16,6 +16,7 @@ jobs:
 
       - name: Cleanup Repository
         run: |
+          rm -rf .git
           rm -rf .github
           rm -rf LICENSE
           rm -rf README.md
